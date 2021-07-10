@@ -1,0 +1,31 @@
+from time import sleep
+
+from requests_html_macro import Macro
+from requests_html import HTMLSession
+
+# Создайте стандартный сеанс requests-html
+session = HTMLSession()
+response = session.get('http://python.org')
+
+# Создайте макрос с ответом
+macro = Macro(response=response)
+
+# Создайте макрос, который использует библиотеку синтаксического анализа для поиска в html
+@macro.search_pattern('Python is a {} language', first=True)
+def foo(data):
+   print(data[0])
+
+# Creates a macro that uses a css selector
+@macro.css_selector('#about', first=True)
+def foo1(data):
+    print(data.text)
+
+
+@macro.xpath('//a', first=True)
+def foo2(data):
+    print(data)
+
+while True:
+    macro.parse()
+    sleep(30)
+    macro.response = session.get('http://python.org')
