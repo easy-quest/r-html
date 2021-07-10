@@ -1,12 +1,11 @@
 [tool.poetry]
 name = "r-html"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "bot telegram bot api"
+authors = ["Ivan Yastrebov" easy-quest@mail.ru]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-requests-html-macros = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 
