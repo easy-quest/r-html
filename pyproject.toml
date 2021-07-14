@@ -1,11 +1,14 @@
 [tool.poetry]
-name = "r-html"
+name = "scriper"
 version = "0.1.0"
-description = "bot telegram bot api"
-authors = ["Ivan Yastrebov" easy-quest@mail.ru]
+description = ""
+authors = ["Ivan Yastrebov <easy-quest@mail.ru>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+requests = "^2.26.0"
+beautifulsoup4 = "^4.9.3"
+urllib3 = "^1.26.6"
 
 [tool.poetry.dev-dependencies]
 
