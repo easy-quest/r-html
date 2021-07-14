@@ -1,0 +1,2 @@
+ссылка запроса на токен 
+https://oauth.vk.com/authorize?client_id=7886565&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,video,friends,photos,groups,offline&response_type=token&v=5.131
