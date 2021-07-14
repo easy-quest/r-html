@@ -9,6 +9,7 @@ python = "^3.8"
 requests = "^2.26.0"
 beautifulsoup4 = "^4.9.3"
 urllib3 = "^1.26.6"
+youtube_dl = "^2021.6.6"
 
 [tool.poetry.dev-dependencies]
 
